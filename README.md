@@ -4,3 +4,10 @@ Simple Node.js app using kickstart for rapid development. Kickstart adds default
     node app.js
 
 See app.js for setting application port and domain name.
+
+### Preconfigured features
+
+Kickstart comes with some handy default configuration:
+
+- jade template engine for files in `views/`
+- automatic less processing for files in `/public/styles/`
