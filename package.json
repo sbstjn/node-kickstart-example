@@ -2,7 +2,7 @@
   "author": "semu <c@semu.mp> (http://github.com/semu)",
   "name": "kickstart-example",
   "description": "Example for kickstart",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "homepage": "https://github.com/semu/node-kickstart-example",
   "contributors": [ 
     { "name": "Sebastian Müller", "email": "c@semu.mp" }],
@@ -11,9 +11,9 @@
     "url": "git://github.com/semu/node-kickstart-example.git"
   },
   "engines": {
-    "node": "~v0.4.10"
+    "node": ">= 0.4.10"
   },
   "dependencies": {
-    "kickstart": ">= 0.0.3"},
+    "kickstart": ">= 0.0.5"},
   "devDependencies": {}
 }
