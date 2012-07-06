@@ -1,7 +1,45 @@
 !!! 5
-html(lang="en")
+html(lang='en')
   head
-    title= title
-    link(rel="stylesheet", href="/styles/init.css")
-    script(type="text/javascript", href="/scripts/init.js")
-  body!= body
+    meta(charset='utf-8')
+    title Bootstrap, from Twitter
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='/styles/bootstrap.css', rel='stylesheet')
+    link(href='/styles/init.css', rel='stylesheet')
+    style
+      body { padding-top: 60px;}
+      body { background-image: url(pattern.png); }
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#') Project name
+          .nav-collapse
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#about') About
+              li
+                a(href='#contact') Contact
+    .container!=body
+    
+    script(src='../assets/js/jquery.js')
+    script(src='../assets/js/bootstrap-transition.js')
+    script(src='../assets/js/bootstrap-alert.js')
+    script(src='../assets/js/bootstrap-modal.js')
+    script(src='../assets/js/bootstrap-dropdown.js')
+    script(src='../assets/js/bootstrap-scrollspy.js')
+    script(src='../assets/js/bootstrap-tab.js')
+    script(src='../assets/js/bootstrap-tooltip.js')
+    script(src='../assets/js/bootstrap-popover.js')
+    script(src='../assets/js/bootstrap-button.js')
+    script(src='../assets/js/bootstrap-collapse.js')
+    script(src='../assets/js/bootstrap-carousel.js')
+    script(src='../assets/js/bootstrap-typeahead.js')

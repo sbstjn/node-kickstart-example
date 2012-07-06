@@ -1,4 +1,4 @@
-var kickstart = require('kickstart').withConfig({'name': 'example.com', 'port': 8585, 'path': __dirname});
+var kickstart = require('kickstart').withConfig({'name': 'localhost', 'port': 8585, 'path': __dirname});
 var srv = kickstart.srv();
 
 srv.all('*', function(req, res) {
